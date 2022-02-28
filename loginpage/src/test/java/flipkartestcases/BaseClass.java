@@ -13,6 +13,7 @@ public class BaseClass
 
 {  
 	WebDriver driver;
+	@SuppressWarnings("deprecation")
 	@BeforeClass()
 	public void setup()
 	{

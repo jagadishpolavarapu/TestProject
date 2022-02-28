@@ -33,9 +33,12 @@ public class TestCase2 extends BaseClass
 		  Thread.sleep(3000);		  
 		  driver.switchTo().window(childWindow);
 		  Thread.sleep(3000);
+		  FlipkartplaceorderPage o1=new FlipkartplaceorderPage(driver);
+		  o1.amount();
 		  FlipkartCartpage c1=new FlipkartCartpage(driver);
 		  c1.cartPage();
-		  FlipkartplaceorderPage o1=new FlipkartplaceorderPage(driver);
+		  o1.increaseitemPage();
+		  
 		  
 	  }
 	}
