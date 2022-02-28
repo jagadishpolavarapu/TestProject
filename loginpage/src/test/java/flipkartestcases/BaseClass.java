@@ -21,11 +21,12 @@ public class BaseClass
 	WebDriverManager.chromedriver().setup();
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
-	driver.get("https://www.flipkart.com/");
+	driver.get("https://www.flipkart.in/");
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
+	
 
-	//@AfterClass()
+	@AfterClass()
 	public void tearDown()
 	{
 	driver.quit();

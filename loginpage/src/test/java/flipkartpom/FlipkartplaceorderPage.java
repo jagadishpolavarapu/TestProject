@@ -15,10 +15,10 @@ public class FlipkartplaceorderPage
 	
 	}
 
-	@FindBy(xpath="//div[@class='nZz3kj _1hNI6F']//following::div[3]//button[2]")
+	@FindBy(xpath="//button[@text()="+"])[1]")
 	private WebElement increasecart;
 	
-	@FindBy(xpath="//div[@class='_1dqRvU']")
+	@FindBy(xpath="(//span[contains(text(),'₹')])[1]/following::span[1])")
 	private WebElement totalPrice;
 	
 	
@@ -28,7 +28,7 @@ public class FlipkartplaceorderPage
 	}
 	public void amount()
 	{
-		System.out.println(totalPrice.getTagName());
+		System.out.println(totalPrice.getText());
 	}
 
 }

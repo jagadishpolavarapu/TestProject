@@ -3,6 +3,10 @@ import java.util.Iterator;
 import java.util.Set;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
+
+import flipkartpom.Amazoncartpage;
+import flipkartpom.Amazonitemclickpage;
+import flipkartpom.Amazonsearchpage;
 import flipkartpom.FlipkartCartpage;
 import flipkartpom.FlipkartHomePage;
 import flipkartpom.FlipkartloginPom;
@@ -38,6 +42,24 @@ public class TestCase2 extends BaseClass
 		  FlipkartCartpage c1=new FlipkartCartpage(driver);
 		  c1.cartPage();
 		  o1.increaseitemPage();
+		  driver.get("https://www.amazon.in/");
+		  Thread.sleep(2000);
+		  Set<String> s3 = driver.getWindowHandles();
+		  Iterator<String> i3=s3.iterator();
+		  String amazonparentWindow=i3.next();
+		  String amazonchildWindow=i3.next();
+		  Thread.sleep(3000);		  
+		  driver.switchTo().window(amazonchildWindow);
+		  Amazonsearchpage a1=new Amazonsearchpage(driver);
+		  a1.amazonsearchitem("tv"+Keys.ENTER);
+		  Amazonitemclickpage c2=new Amazonitemclickpage(driver);
+		  c2.amazonitem();
+		  Amazoncartpage c3=new Amazoncartpage(driver);
+		  c3.cartPageamazon();
+		  
+		  
+		  
+		  
 		  
 		  
 	  }
