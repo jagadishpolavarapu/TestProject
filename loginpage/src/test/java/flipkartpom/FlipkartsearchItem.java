@@ -15,7 +15,7 @@ public class FlipkartsearchItem
 	
 	}
 
-	@FindBy(xpath="//div[@data-id=\"TVSFP6FJZGV4YM5A\"]//following::a")
+	@FindBy(xpath="(//div[@class='MIXNux']/div)[1]")
 	private WebElement itemEntered;
 	
 	public void item()

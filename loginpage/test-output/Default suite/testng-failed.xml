@@ -3,12 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="flipkartestcases.TestCase2">
+      <class name="flipkartestcases.Testcase1">
         <methods>
-          <include name="scenario1"/>
+          <include name="loginMethod"/>
           <include name="setup"/>
+          <include name="searchItemclicable"/>
+          <include name="homePageMethod"/>
+          <include name="cartMethod"/>
+          <include name="getMoneyMethod"/>
         </methods>
-      </class> <!-- flipkartestcases.TestCase2 -->
+      </class> <!-- flipkartestcases.Testcase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

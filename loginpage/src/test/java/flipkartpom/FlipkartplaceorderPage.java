@@ -15,10 +15,10 @@ public class FlipkartplaceorderPage
 	
 	}
 
-	@FindBy(xpath="//button[@text()="+"])[1]")
+	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div/div[1]/div/div[2]/div/div[5]/div[1]/div/button[2]")
 	private WebElement increasecart;
 	
-	@FindBy(xpath="(//span[contains(text(),'₹')])[1]/following::span[1])")
+	@FindBy(xpath="//div[@class='Ob17DV _3X7Jj1']")
 	private WebElement totalPrice;
 	
 	

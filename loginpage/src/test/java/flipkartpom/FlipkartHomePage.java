@@ -21,9 +21,9 @@ public class FlipkartHomePage
 	@FindBy(xpath="//input[@title='Search for products, brands and more']")
 	private WebElement searchIcon;
 	
-	public void enterSearch(String search)
+	public void enterSearch(String searchitem)
 	{
-    	searchIcon.sendKeys(search);
+    	searchIcon.sendKeys(searchitem);
 	}
     
 	

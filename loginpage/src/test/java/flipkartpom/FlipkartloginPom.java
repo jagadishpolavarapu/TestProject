@@ -25,21 +25,14 @@ public class FlipkartloginPom
 	@FindBy(xpath="//button[@class='_2KpZ6l _2HKlqd _3AWRsL']")
 	private WebElement loginButton;
 	
-    public void enterUsername(String username)
+    public void enterLogincredentilas(String un,String pwd)
 	{
-    	userName.sendKeys(username);
+    	userName.sendKeys(un);
+    	passWord.sendKeys(pwd);
+    	loginButton.click();
+    	
 	}
     
-    public void enterPassword(String password)
     
-    {
-    	
-    passWord.sendKeys(password);
-    }
-    public void clicklogin()
-    {
-      loginButton.click();
-    }
-   
 }
 

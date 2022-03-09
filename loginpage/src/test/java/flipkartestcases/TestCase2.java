@@ -56,12 +56,6 @@ public class TestCase2 extends BaseClass
 		  c2.amazonitem();
 		  Amazoncartpage c3=new Amazoncartpage(driver);
 		  c3.cartPageamazon();
-		  
-		  
-		  
-		  
-		  
-		  
-	  }
+}
 	}
 
