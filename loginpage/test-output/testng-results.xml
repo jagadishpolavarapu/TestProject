@@ -1,77 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="4" failed="1" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-10T05:11:57 IST" name="Default suite" finished-at="2022-03-10T05:12:49 IST" duration-ms="51846">
+  <suite started-at="2022-03-10T15:27:19 IST" name="Default suite" finished-at="2022-03-10T15:28:18 IST" duration-ms="58613">
     <groups>
     </groups>
-    <test started-at="2022-03-10T05:11:57 IST" name="Default test" finished-at="2022-03-10T05:12:49 IST" duration-ms="51846">
-      <class name="flipkartestcases.Testcase1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:flipkartestcases.Testcase1@54a7079e]" started-at="2022-03-10T05:11:57 IST" name="setup" finished-at="2022-03-10T05:12:19 IST" duration-ms="21336" status="PASS">
+    <test started-at="2022-03-10T15:27:19 IST" name="Default test" finished-at="2022-03-10T15:28:18 IST" duration-ms="58613">
+      <class name="flipkartestcases.TestCase2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:27:20 IST" name="setup" finished-at="2022-03-10T15:27:40 IST" duration-ms="20019" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginMethod()[pri:0, instance:flipkartestcases.Testcase1@54a7079e]" started-at="2022-03-10T05:12:19 IST" name="loginMethod" finished-at="2022-03-10T05:12:24 IST" duration-ms="5031" status="PASS">
+        <test-method signature="loginMethod()[pri:1, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:27:40 IST" name="loginMethod" finished-at="2022-03-10T15:27:44 IST" duration-ms="4429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginMethod -->
-        <test-method signature="homePageMethod()[pri:0, instance:flipkartestcases.Testcase1@54a7079e]" started-at="2022-03-10T05:12:24 IST" name="homePageMethod" finished-at="2022-03-10T05:12:24 IST" depends-on-methods="flipkartestcases.Testcase1.loginMethod" duration-ms="200" status="PASS">
+        <test-method signature="homePageMethod()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:27:44 IST" name="homePageMethod" finished-at="2022-03-10T15:27:44 IST" depends-on-methods="flipkartestcases.TestCase2.loginMethod" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageMethod -->
-        <test-method signature="searchItemclicable()[pri:0, instance:flipkartestcases.Testcase1@54a7079e]" started-at="2022-03-10T05:12:24 IST" name="searchItemclicable" finished-at="2022-03-10T05:12:35 IST" depends-on-methods="flipkartestcases.Testcase1.homePageMethod" duration-ms="11378" status="PASS">
+        <test-method signature="searchItemclicable()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:27:44 IST" name="searchItemclicable" finished-at="2022-03-10T15:27:56 IST" depends-on-methods="flipkartestcases.TestCase2.homePageMethod" duration-ms="11745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItemclicable -->
-        <test-method signature="cartMethod()[pri:0, instance:flipkartestcases.Testcase1@54a7079e]" started-at="2022-03-10T05:12:35 IST" name="cartMethod" finished-at="2022-03-10T05:12:44 IST" depends-on-methods="flipkartestcases.Testcase1.searchItemclicable" duration-ms="8874" status="PASS">
+        <test-method signature="cartMethod()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:27:56 IST" name="cartMethod" finished-at="2022-03-10T15:28:04 IST" depends-on-methods="flipkartestcases.TestCase2.searchItemclicable" duration-ms="8279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartMethod -->
-        <test-method signature="getMoneyMethod()[pri:0, instance:flipkartestcases.Testcase1@54a7079e]" started-at="2022-03-10T05:12:44 IST" name="getMoneyMethod" finished-at="2022-03-10T05:12:49 IST" depends-on-methods="flipkartestcases.Testcase1.cartMethod" duration-ms="4903" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="getMoneyMethod()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:28:04 IST" name="getMoneyMethod" finished-at="2022-03-10T15:28:18 IST" depends-on-methods="flipkartestcases.TestCase2.cartMethod" duration-ms="13796" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <button class="_23FHuj">...</button> is not clickable at point (174, 608). Other element would receive the click: <div class="VUS-tD eBV0fb">...</div>
-  (Session info: chrome=99.0.4844.51)
+              <![CDATA[Unable to find element with locator By.xpath:  (//div[@class='Ob17DV _3X7Jj1']/span)[1]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'JAGADISH', ip: '192.168.17.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d0b632ae0d9cb3db0545877d815f0180, clickElement {id=5cfbadcc-b95f-4a0a-904f-ac33f5829370}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\jagadish\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50396/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d0b632ae0d9cb3db0545877d815f0180)] -> xpath: //*[@id="container"]/div/div[2]/div/div/div[1]/div/div[2]/div/div[5]/div[1]/div/button[2]]
-Session ID: d0b632ae0d9cb3db0545877d815f0180]]>
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="_23FHuj">...</button> is not clickable at point (174, 608). Other element would receive the click: <div class="VUS-tD eBV0fb">...</div>
-  (Session info: chrome=99.0.4844.51)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath:  (//div[@class='Ob17DV _3X7Jj1']/span)[1]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'JAGADISH', ip: '192.168.17.243', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d0b632ae0d9cb3db0545877d815f0180, clickElement {id=5cfbadcc-b95f-4a0a-904f-ac33f5829370}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\jagadish\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50396/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d0b632ae0d9cb3db0545877d815f0180)] -> xpath: //*[@id="container"]/div/div[2]/div/div/div[1]/div/div[2]/div/div[5]/div[1]/div/button[2]]
-Session ID: d0b632ae0d9cb3db0545877d815f0180
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at flipkartpom.FlipkartplaceorderPage.increaseitemPage(FlipkartplaceorderPage.java:27)
-at flipkartestcases.Testcase1.getMoneyMethod(Testcase1.java:64)
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+at flipkartpom.FlipkartplaceorderPage.amount(FlipkartplaceorderPage.java:30)
+at flipkartestcases.TestCase2.getMoneyMethod(TestCase2.java:67)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,11 +81,107 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMoneyMethod -->
-      </class> <!-- flipkartestcases.Testcase1 -->
+        <test-method signature="amazonItemSearch()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:28:18 IST" name="amazonItemSearch" finished-at="2022-03-10T15:28:18 IST" depends-on-methods="flipkartestcases.TestCase2.getMoneyMethod" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestCase2.amazonItemSearch()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestCase2.amazonItemSearch()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonItemSearch -->
+        <test-method signature="amazonItemclick()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:28:18 IST" name="amazonItemclick" finished-at="2022-03-10T15:28:18 IST" depends-on-methods="flipkartestcases.TestCase2.amazonItemSearch" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestCase2.amazonItemclick()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestCase2.amazonItemclick()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonItemclick -->
+        <test-method signature="amazoncartPage()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4]" started-at="2022-03-10T15:28:18 IST" name="amazoncartPage" finished-at="2022-03-10T15:28:18 IST" depends-on-methods="flipkartestcases.TestCase2.amazonItemclick" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestCase2.amazoncartPage()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestCase2.amazoncartPage()[pri:0, instance:flipkartestcases.TestCase2@2dc54ad4] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazoncartPage -->
+      </class> <!-- flipkartestcases.TestCase2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

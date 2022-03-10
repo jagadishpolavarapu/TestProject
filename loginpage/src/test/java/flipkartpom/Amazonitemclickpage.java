@@ -15,7 +15,7 @@ public class Amazonitemclickpage
 	
 	}
 
-	@FindBy(xpath="//div[@class='a-section a-spacing-small a-spacing-top-small']/following::div[2]")
+	@FindBy(xpath="(//div[@class='a-section a-spacing-none aok-relative s-image-overlay-grey s-list-status-badge-container']/following::span[1]/a[1]/div)[1]")
 	private WebElement amazonitemEntered;
 	
 	public void amazonitem()

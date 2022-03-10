@@ -12,13 +12,12 @@ public class FlipkartplaceorderPage
 	{
 		ldriver=driver;
 		PageFactory.initElements(driver, this);
-	
 	}
 
-	@FindBy(xpath="//*[@id=\"container\"]/div/div[2]/div/div/div[1]/div/div[2]/div/div[5]/div[1]/div/button[2]")
+	@FindBy(xpath="//div[@class='nZz3kj _1hNI6F']//following::div[3]//button[2]")
 	private WebElement increasecart;
 	
-	@FindBy(xpath="//div[@class='Ob17DV _3X7Jj1']")
+	@FindBy(xpath=" (//div[@class='Ob17DV _3X7Jj1']/span)[1]")
 	private WebElement totalPrice;
 	
 	

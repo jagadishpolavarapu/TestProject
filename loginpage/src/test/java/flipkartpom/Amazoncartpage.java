@@ -18,9 +18,14 @@ public class Amazoncartpage
 	@FindBy(xpath="//input[@id='add-to-cart-button']")
 	private WebElement amazonaddtocart;
 	
+	
+	@FindBy(id="attach-accessory-cart-subtotal")
+	private WebElement cartMoney;
 	public void cartPageamazon()
 	{
 		amazonaddtocart.click();
+		cartMoney.getText();
+		
 	}
 
 }

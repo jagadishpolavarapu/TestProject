@@ -5,7 +5,12 @@ package flipkartestcases;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import flipkartpom.FlipkartCartpage;
 import flipkartpom.FlipkartHomePage;
@@ -26,7 +31,9 @@ public class Testcase1 extends BaseClass
   public void loginMethod() throws InterruptedException
   {
 	  f1=new FlipkartloginPom(driver);
-	  Thread.sleep(4000); 
+	  @SuppressWarnings("deprecation")
+	  WebDriverWait w1=new WebDriverWait(driver,5);
+	  w1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@class='_2IX_2- VJZDxU']")));
 	  f1.enterLogincredentilas(prop.getProperty("username"),prop.getProperty("password"));
 	  
   }
@@ -61,8 +68,9 @@ public void cartMethod() throws InterruptedException
 public void getMoneyMethod() throws InterruptedException
 {
 	  FlipkartplaceorderPage o1=new FlipkartplaceorderPage(driver);
+	  Thread.sleep(6000);
 	  o1.increaseitemPage();
-	  Thread.sleep(3000);
+	  Thread.sleep(5000);
 	  o1.amount();
   }
 }
